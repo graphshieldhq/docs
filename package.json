@@ -1,0 +1,29 @@
+{
+  "name": "@graphshield/docs",
+  "version": "0.0.1",
+  "description": "Documentation for GraphShield Proxy and GraphShield Hub",
+  "scripts": {
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider node ./node_modules/vuepress/cli.js dev public -p 3000 --no-clear-screen",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider node ./node_modules/vuepress/cli.js build public --no-cache",
+    "commit": "npm run build && git add . && npx --yes git-cz",
+    "push": "git push --follow-tags origin main"
+  },
+  "author": "Guillaume Meyer <guillaume@graphshield.io> (https://www.graphshield.io)",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guillaumemeyer/docs.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "markdown-it-checkbox": "^1.1.0",
+    "moment": "^2.29.1",
+    "npm-force-resolutions": "0.0.10",
+    "vuepress": "^1.8.0",
+    "vuepress-plugin-autometa": "^0.1.13",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-mermaidjs": "^1.8.1",
+    "vuepress-theme-yuu": "^3.0.1"
+  }
+}
