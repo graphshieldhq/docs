@@ -6,14 +6,14 @@ When a Microsoft Graph operation transcends the lifetime of a single API request
 
 An example is the [Clone a team](https://docs.microsoft.com/en-us/graph/api/team-clone) operation that uses a [teamsAsyncOperation resource type](https://docs.microsoft.com/en-us/graph/api/resources/teamsasyncoperation):
 
-```HTTP{2}
+```HTTP
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})
 ```
 
 Another example is the [Copy a DriveItem](https://docs.microsoft.com/en-us/graph/api/driveitem-copy) operation that uses an [AsyncJobStatus resource](https://docs.microsoft.com/en-us/graph/api/resources/asyncjobstatus):
 
-```HTTP{2}
+```HTTP
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/{id}
 ```

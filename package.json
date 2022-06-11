@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "description": "Documentation for GraphShield Proxy and GraphShield Hub",
   "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider node ./node_modules/vuepress/cli.js dev public -p 3000 --no-clear-screen",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider node ./node_modules/vuepress/cli.js build public --no-cache",
-    "commit": "npm run build && git add . && npx --yes git-cz",
+    "start": "mkdocs serve",
+    "commit": "git add .",
     "push": "git push --follow-tags origin main"
   },
   "author": "Guillaume Meyer <guillaume@graphshield.io> (https://www.graphshield.io)",

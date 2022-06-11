@@ -3,7 +3,7 @@
 
 ## Example
 A typical example of a subscription is to listen for the arrival of new messanges in an inbox. To create this kind of subscription, you will typically post:
-```HTTP{1}
+```HTTP
 POST https://microsoftgraph.graphshield.app/v1.0/subscriptions
 Content-type: application/json
 ```

@@ -11,6 +11,6 @@ Anonymize the Microsoft Graph responses.
 | Enabled | Defines if the rule is enabled or disabled. |
 | Action | The anonymization action that should be applied to the response. Supported values are `redact` and `randomize` |
 
-:::tip
-`Anonymize Response` rule is disabled by default.
-:::
+!!! tip
+    `Anonymize Response` rule is disabled by default.
+

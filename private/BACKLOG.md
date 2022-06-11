@@ -2,10 +2,8 @@
 
 ## NOW
 
-### Platforms definition
-Describe all supported platforms from a central location
-For each api platformm:
-For each identity platform:
+Doc site gen
+https://squidfunk.github.io/mkdocs-material/
 
 ### Proxy authentication schemes
 `PROXY_AUTH_SCHEME` `pass-through` `api-key`
@@ -20,7 +18,7 @@ Create a function returning the list of middlewares
 ### Hub integration
 `HUB_INTEGRATION_ENABLED`
 `HUB_API_KEY`
-`HUB_HOST_NAME`
+`HUB_HOST`
 
 From proxy: All in a specific module:
 - call to generate api key endpoint
@@ -38,6 +36,30 @@ text/plain
 ['GET', 'POST' , 'PUT', 'PATCH', 'DELETE']
 
 ## NEXT
+
+### Multiple platforms paths for different Graph clouds
+// MICROSOFT_IDENTITY_PLATFORM_BASEURL: 'https://login.microsoftonline.com',
+// MICROSOFT_AZURE_AD_CHINA_BASEURL: 'https://login.chinacloudapi.cn',
+// MICROSOFT_GRAPH_CHINA_DEFAULT_SCOPE: 'https://graph.microsoft.com/.default',
+// MICROSOFT_GRAPH_CHINA_BASEURL: 'https://microsoftgraph.chinacloudapi.cn',
+// MICROSOFT_AZURE_AD_DOD_BASEURL: 'https://login.microsoftonline.us',
+// MICROSOFT_GRAPH_DOD_DEFAULT_SCOPE: 'https://graph.microsoft.com/.default',
+// MICROSOFT_GRAPH_DOD_BASEURL: 'https://dod-graph.microsoft.us',
+// MICROSOFT_AZURE_AD_GCC_BASEURL: 'https://login.microsoftonline.us',
+// MICROSOFT_GRAPH_GCC_DEFAULT_SCOPE: 'https://graph.microsoft.com/.default',
+// MICROSOFT_GRAPH_GCC_BASEURL: 'https://graph.microsoft.com',
+// MICROSOFT_AZURE_AD_GCCHIGH_BASEURL: 'https://login.microsoftonline.us',
+// MICROSOFT_GRAPH_GCCHIGH_DEFAULT_SCOPE: 'https://graph.microsoft.com/.default',
+// MICROSOFT_GRAPH_GCCHIGH_BASEURL: 'https://graph.microsoft.us',
+// MICROSOFT_AZURE_AD_GERMANY_BASEURL: 'https://login.microsoftonline.de',
+// MICROSOFT_GRAPH_GERMANY_DEFAULT_SCOPE: 'https://graph.microsoft.com/.default',
+// MICROSOFT_GRAPH_GERMANY_BASEURL: 'https://graph.microsoft.de',
+// MICROSOFT_AZURE_AD_GLOBAL_BASEURL: 'https://login.microsoftonline.com',
+// MICROSOFT_GRAPH_GLOBAL_DEFAULT_SCOPE: 'https://graph.microsoft.com/.default',
+// MICROSOFT_GRAPH_GLOBAL_BASEURL: 'https://graph.microsoft.com',
+
+## Look at Sentry Relay
+https://docs.sentry.io/product/relay/
 
 ### Create performance tests with autocannon
 https://www.npmjs.com/package/autocannon?activeTab=readme
@@ -87,6 +109,7 @@ For v1: application tokens only.
 ### App fingerprinting
 
 ### Anonymization policy
+Use Microsoft Presidio: https://github.com/microsoft/presidio
 
 ### Classification policy
 

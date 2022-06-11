@@ -31,9 +31,8 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 2. Retry the request.
 3. If the request fails again with a 429 error code, you are still being throttled. Continue to use the recommended `Retry-After` delay and retry the request until it succeeds.
 
-:::tip Rule of Thumb
-If no `Retry-After` header is provided in the response, we recommend implementing an exponential backoff retry policy.
-:::
+!!! tip Rule of Thumb
+    If no `Retry-After` header is provided in the response, we recommend implementing an exponential backoff retry policy.
 
 In addition to the `Retry-After` header, GraphShield includes `X-RateLimit-Limit` and `X-RateLimit-Remaining` infos in body of the throttled response:
 

@@ -10,6 +10,5 @@ GraphShield rule that creates an audit trail record for the request.
 |:-------|:------------|
 | Enabled | Defines if the rule is enabled or disabled. |
 
-:::tip
-`Audit` rule is enabled by default.
-:::
+!!! tip
+    `Audit` rule is enabled by default.

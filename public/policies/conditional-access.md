@@ -15,9 +15,8 @@ GraphShield threat intelligence database includes over 620M malicious IP address
 | Deny Abuser | Deny IP addresses that are a known source of abuse (e.g. spam, harvesters, registration bots). Returns an `HTTP 403 Forbidden` status code in case of violation. |
 | Deny Attacker | Deny IP addresses that are a known source of malicious activity (e.g. attacks, malware, botnet activity). Returns an `HTTP 403 Forbidden` status code in case of violation. |
 
-:::tip Secure by Default
-All GraphShield `Threat Intelligence` options are enabled by default.
-:::
+!!! tip Secure by Default
+    All GraphShield `Threat Intelligence` options are enabled by default.
 
 ## IP-based Control
 Controls access to the target API based on IP-based conditional access rules.
@@ -29,9 +28,8 @@ Controls access to the target API based on IP-based conditional access rules.
 | Enabled | Defines if the rule is enabled or disabled. |
 | Allowed IPs | Authorized IP Addresses as a list of comma-separated IPs or IP ranges. It handles IPv6, IPv4, and IPv4-mapped over IPv6 addresses. Returns an `HTTP 403 Forbidden` status code in case of violation. |
 
-:::tip
-`IP-based Control` rule is disabled by default.
-:::
+!!! tip
+    `IP-based Control` rule is disabled by default.
 
 ## Location-based Control
 Controls access to the target API based on location conditional access rules.
@@ -43,6 +41,5 @@ Controls access to the target API based on location conditional access rules.
 | Enabled | Defines if the rule is enabled or disabled. |
 | Allowed Countries | Authorized countries as a list of comma-separated country codes (The 2 letter [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code associated with this IP.) Returns an `HTTP 403 Forbidden` status code in case of violation. |
 
-:::tip
-`Location-based Control` rule is disabled by default.
-:::
+!!! tip
+    `Location-based Control` rule is disabled by default.

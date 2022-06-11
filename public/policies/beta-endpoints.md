@@ -11,6 +11,5 @@ GraphShield rule that denies access to the Microsoft Graph /beta endpoints.
 | Enabled | Defines if the rule is enabled or disabled. |
 | Deny Beta | Denies access to the Microsoft Graph beta endpoints. Returns an `HTTP 403 Forbidden` status code in case of violation. |
 
-:::tip
-`Disable Beta Endpoints` rule is disabled by default.
-:::
+!!! tip
+    `Disable Beta Endpoints` rule is disabled by default.

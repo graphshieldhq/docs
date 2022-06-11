@@ -4,10 +4,9 @@
 ## Abstract
 GraphShield supports two modes of authentication, `Standard` and `Hardened`.
 
-::: tip
-- The `Standard` mode is perfect to use GraphShield without any additional constraints.  
-- The `Hardened` mode may be required when you're dealing with a strictly controlled Microsoft 365 environment.
-:::
+!!! tip
+    - The `Standard` mode is perfect to use GraphShield without any additional constraints.  
+    - The `Hardened` mode may be required when you're dealing with a strictly controlled Microsoft 365 environment.
 
 ### Standard mode
 In standard mode, to call the Microsoft Graph API through GraphShield, your application just need to acquire a regular OAuth 2.0 Access token from the Microsoft Identity Platform, and present it in either of the following:
@@ -47,9 +46,8 @@ We're currently supporting virtual tokens in these two main scenarios, that shou
 - Access on behalf of a user: Used by **single page apps**, **web apps**, and **natively installed apps**
 - Access without a user: Used for **server-to-server** interactions that must run in the background
 
-::: warning Other OAuth 2.0 and OpenID protocols
-If you need to use other protocols, such as `OAuth 2.0 on-behalf-of flow` or `OAuth 2.0 device code flow`, just [contact us](https://www.graphshield.io/#contact).
-:::
+!!! warning Other OAuth 2.0 and OpenID protocols
+    If you need to use other protocols, such as `OAuth 2.0 on-behalf-of flow` or `OAuth 2.0 device code flow`, just [contact us](https://www.graphshield.io/#contact).
 
 #### Access on behalf of a user
 The [OAuth 2.0 authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) is described in [section 4.1 of the OAuth 2.0 specification](https://tools.ietf.org/html/rfc6749). It's used to perform authentication and authorization in the majority of app types, including single page apps, web apps, and natively installed apps. The flow enables apps to securely acquire access_tokens that can be used to access resources secured by the Microsoft identity platform, as well as refresh tokens to get additional access_tokens, and ID tokens for the signed in user.
@@ -76,9 +74,9 @@ sequenceDiagram
     gs ->> +client: Access and refresh tokens
 ```
 
-::: warning Using a national environment? (US, DE, CN...)
-See [Using a specific Microsoft Identity Platform environment](#using-a-microsoft-identity-platform-national-environment) if required.
-:::
+!!! warning Using a national environment? (US, DE, CN...)
+    See [Using a specific Microsoft Identity Platform environment](#using-a-microsoft-identity-platform-national-environment) if required.
+
 
 #### Access without a user
 You can use the [OAuth 2.0 client credentials grant](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) specified in [RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.4), sometimes called "two-legged OAuth", to access web-hosted resources by using the identity of an application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often referred to as daemons or service accounts.
@@ -105,9 +103,10 @@ sequenceDiagram
     gs ->> +client: Access token
 ```
 
-::: warning Using a national environment? (US, DE, CN...)
-See [Using a specific Microsoft Identity Platform environment](#using-a-microsoft-identity-platform-national-environment) if required.
-:::
+!!! warning
+    Using a national environment? (US, DE, CN...)
+
+    See [Using a specific Microsoft Identity Platform environment](#using-a-microsoft-identity-platform-national-environment) if required.
 
 ## Using a Microsoft Identity Platform national environment
 The Microsoft Identity Platform is available from different environments, and you have to use a different URL for each of them, for instance:
