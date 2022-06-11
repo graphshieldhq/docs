@@ -1,6 +1,6 @@
 site_name: GraphShield | Docs
 site_url: https://docs.graphshield.io
-repo_url: https://github.com/guillaumemeyer/docs/
+# repo_url: https://github.com/guillaumemeyer/docs/
 # repo_name: GitHub
 docs_dir: public
 site_dir: docs
@@ -13,10 +13,14 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
 theme:
   name: material
+  language: en
   logo: assets/logo.png
   favicon: assets/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.tracking
@@ -32,3 +36,16 @@ theme:
   palette:
     primary: black # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
     accent: red
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/graphshield
+      name: GraphShield on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/graphshield
+      name: GraphShield on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/guillaumemeyer
+      name: GraphShield on GitHub
+copyright: Copyright &copy; 2022 Guillaume Meyer

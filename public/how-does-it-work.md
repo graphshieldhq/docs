@@ -1,4 +1,4 @@
-# How does it Work?
+# How does it work?
 
 **ABSTRACT**
 From a logical standpoint, GraphShield acts as a firewall that stands between your custom and third-party SAAS apps and the Microsoft Graph.

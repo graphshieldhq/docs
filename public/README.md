@@ -1,4 +1,4 @@
-# Welcome
+# Overview
 > Discover all the incredible capabilities of our platform so that you can protect your Microsoft 365 environment and leverage third-party apps securely.
 
 GraphShield is:

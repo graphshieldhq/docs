@@ -4,7 +4,7 @@
   "description": "Documentation for GraphShield Proxy and GraphShield Hub",
   "scripts": {
     "start": "mkdocs serve",
-    "commit": "git add .",
+    "commit": "git add . && git commit",
     "push": "git push --follow-tags origin main"
   },
   "author": "Guillaume Meyer <guillaume@graphshield.io> (https://www.graphshield.io)",

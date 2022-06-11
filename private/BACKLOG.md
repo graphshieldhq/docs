@@ -2,18 +2,10 @@
 
 ## NOW
 
-Doc site gen
-https://squidfunk.github.io/mkdocs-material/
-
 ### Proxy authentication schemes
-`PROXY_AUTH_SCHEME` `pass-through` `api-key`
-Replace `AUTH_ANONYMOUS_ENABLED`
+`AUTH_ANONYMOUS_ENABLED` configuration is replaced by `PROXY_AUTH_SCHEME` that could be `pass-through` ok `api-key`.
 
-Map the option from Google Apigee
-https://cloud.google.com/apigee/docs/api-platform/tutorials/create-api-proxy-openapi-spec
 
-Replace the anonymous api key by a dynamic proxy app.all?
-Create a function returning the list of middlewares
 
 ### Hub integration
 `HUB_INTEGRATION_ENABLED`
